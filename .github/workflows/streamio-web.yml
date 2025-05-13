@@ -5,12 +5,12 @@ run-name: ${{ github.actor }} is building streamio-web 🚀
 on:
   push:
     branches:
-      - 'master'
+      - 'development'
     paths:
       - '**'
   pull_request:
     branches:
-      - 'master'
+      - 'development'
     paths:
       - '**'
   # schedule:
