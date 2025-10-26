@@ -82,7 +82,7 @@ const useStreamingOptions = (streamingServer: StreamingServer) => {
     ), [streamingServer.deviceInfo]);
 
     const streamingServerRemoteUrlInput = useMemo(() => ({
-        value: streamingServer.remoteUrl,
+        value: "http://stremio-server.valiantlynx.com",
     }), [streamingServer.remoteUrl]);
 
     const remoteEndpointSelect = useMemo(() => {
