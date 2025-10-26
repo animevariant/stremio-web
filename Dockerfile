@@ -20,7 +20,7 @@ WORKDIR /var/www/stremio-web
 FROM base AS app
 
 COPY pnpm-lock.yaml /var/www/stremio-web
-RUN pnpm fetch --prod
+RUN pnpm install
 
 COPY . /var/www/stremio-web
 RUN pnpm run build
