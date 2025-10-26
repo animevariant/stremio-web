@@ -14,3 +14,6 @@ services:
       - traefik.http.routers.streamio-server.rule=Host(`streamio-server.valiantlynx.com`)
       - traefik.http.routers.streamio-server.entrypoints=web
       - traefik.http.services.streamio-server.loadbalancer.server.port=11470
+
+networks:
+  dokploy-network:
