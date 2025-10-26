@@ -19,7 +19,7 @@ WORKDIR /var/www/stremio-web
 # Setup app
 FROM base AS app
 
-COPY pnpm-lock.yaml /var/www/stremio-web
+COPY package.json pnpm-lock.yaml /var/www/stremio-web
 RUN pnpm install
 
 COPY . /var/www/stremio-web
